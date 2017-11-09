@@ -11,38 +11,46 @@
 }
 
 /*:: first-letter zmienia pierwsza litere w danym elemencie*/
+
 #before_after p::first-letter {
 	color: yellow;
 	font-weight: bold;
 }
 
 /*::first-line zmienia wyglad pierwszej linijki tekstu*/
+
 #before_after p::first-letter {
 	font-size: 20px;
 	color: red;
 }
 
 /*pseudokasy linkow*/
+
 /*:link-nieodwiedzony*/
-#linki a{
+
+#linki a {
 	text-decoration: none;
 }
+
 #linki a:link {
 	color: hotpink;
 	font-style: italic;
 }
 
 /*:visited - odwiedzony*/
+
 #linki a:visited {
 	color: grey;
 }
 
 /*:hover po ajechabniu myszka*/
+
 #linki a:hover {
 	border: 1px solid black;
 }
 
 /*:active -od momentu klikniecia do momentu puszczenia LPM*/
+
 #linki a:active {
 	color: red;
 	font-weight: bold;
@@ -55,38 +63,48 @@
 }
 
 /*:target - okresla wyglad elementu do ktorego prowadzzi kotwica*/
+
 div:target {
 	border: 1px solid black;
 }
 
 /*:lang -okresla wyglad elementyu o podanym atrbucie lang*/
+
 div:lang(pl) {
 	border: 3px solid blue;
 
 }
 
 /*:first-child okrsla wyglad pierwszego zagniezdzonego elementu*/
+
 #childs ul li:first-child {
 	font-size: 30px;
 	color: red;
 }
+
 /*:first-child okresla wyglad ostatniego zagniezdzonego elementu*/
+
 #childs ul li:last-child {
 	background-color: yellow;
 }
+
 /*:only-child -okresla wyglad jedynego elementu rodzica*/
+
 #before_after p:only-child {
 	color: violet;
 }
+
 /*:empty -lapie element ktory nie ma zawartosci nic zagniezdzonego lacznie z textem*/
+
 #childs span:empty {
-	display:  block;
+	display: block;
 	height: 200px;
 	width: 200px;
 	background-color: green;
 }
 
 /*:nth-child() / :nth-last-child()*/
+
 /*wyszukuje dzieci wedle wzoru :nth-child() rozpoczyna liczenie od pierwszego do ostatniego dziecka natomiast :nht-last-child()*/
 
 /*
@@ -101,36 +119,51 @@ div:lang(pl) {
 #childs ul li:nth-child(4n + 1) {
 	background-color: green;
 }
+
 /*selektory atrybutow*/
+
 /*po nazwie atrybutu*/
+
 #atrybuty input[type] {
 	display: block;
 	width: 100%;
 	margin-bottom: 10px;
 }
+
 /*po okreslonej wartosci atrybutu*/
+
 #atrybuty input[type="tel"] {
 	border: 5px solid black;
 }
+
 /*po wystepujacej wartosci atrybutu nalezy podac dokladna wartosc*/
+
 #atrybuty input[type="text opis"] {
 	border: 5px solid red;
 }
+
 /*po wystapieniu wartosci atrybutu szuka podanego przez nas ciugu znakow*/
+
 #atrybuty input[type*="op"] {
 	border: 5px solid violet;
 }
+
 /*po wartosci atrybut ktora zacyna sie od podanego ciagu znakow*/
+
 #atrybuty input[type^="pierwszy"] {
 	border: 5px solid red;
 }
+
 /*po wartosci atrybutow ktory konczy sie na podany ciag znkow*/
+
 #atrybuty input[type$="q"] {
 	border: 5px solid red;
 }
+
 #inline-block {
 	text-align: center;
 }
+
 #inline-block div {
 	display: inline-block;
 	width: 50%;
@@ -145,24 +178,29 @@ div:lang(pl) {
 	width: 100%;
 	background-color: bisque;
 }
+
 #main-nav ul {
 	text-align: center;
 }
+
 #main-nav ul li {
 	display: inline-block;
 }
 
 #floatowanie img {
 	float: right;
-	
+
 }
+
 #floatowanie p {
 	clear: right;
 }
+
 #float_inline_block {
 	background-color: black;
 	text-align: center;
 }
+
 #float_inline_block .inner {
 	display: inline-block;
 	height: 300px;
@@ -170,24 +208,28 @@ div:lang(pl) {
 	width: 33.1%;
 	float: left;
 }
+
 #float_inline_block .clear {
 	clear: both;
 }
 
+#transition {
+	width: 400px;
+	height: 300px;
+	background-color: blue;
+	transition-property: background-color, width;
+/*
+	transition-duration: 4s;
+	transition-delay: 2s;
+	transition-timing-function: linear;
+*/
+	transition: all 0.4s linear;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#transition:hover {
+	background-color: red;
+	width: 800px;
+}
 
 
 
