@@ -228,8 +228,46 @@ div:lang(pl) {
 
 #transition:hover {
 	background-color: red;
-	width: 800px;
-}
+	width: 800px;}
+
+	#tlo {
+		height: 800px;
+		background-image: 
+		url('http://www.hodowle.eu/Photos/wspinajacy-sie-kot-szkocki-.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+/*
+		background: url no-repeat;
+		background-size: cover;
+		
+*/
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
