@@ -1,0 +1,19 @@
+@media all and (min-width:800px) and (max-width: 1200px) {
+	#main-nav {
+		background-color: blue;
+	}
+}
+/*
+@media all and (max-width:1200px) {
+	
+}
+@media all and (max-width:992px) {
+	
+}	
+@media all and (max-width:767px) {
+	
+}
+@media all and (max-width:480px) {
+	
+}*/
+

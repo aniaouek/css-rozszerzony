@@ -1,5 +1,11 @@
 /*before after nie istnieja w dokuencie jako programisci jestesmy w stanie dodac taki element.aby utworzyc beforw iafter musimy ustawic wlasciwosc content moze byc pusta np: content :''; */
+* {
+	box-sizing: border-box;
+}
 
+body {
+	
+}
 #before_after p::before {
 	content: 'p ';
 	color: red;
@@ -43,7 +49,7 @@
 	color: grey;
 }
 
-/*:hover po ajechabniu myszka*/
+/*:hover po nsajechabniu myszka*/
 
 #linki a:hover {
 	border: 1px solid black;
@@ -128,6 +134,7 @@ div:lang(pl) {
 	display: block;
 	width: 100%;
 	margin-bottom: 10px;
+	
 }
 
 /*po okreslonej wartosci atrybutu*/
@@ -218,7 +225,7 @@ div:lang(pl) {
 	height: 300px;
 	background-color: blue;
 	transition-property: background-color, width;
-/*
+	/*
 	transition-duration: 4s;
 	transition-delay: 2s;
 	transition-timing-function: linear;
@@ -228,48 +235,36 @@ div:lang(pl) {
 
 #transition:hover {
 	background-color: red;
-	width: 800px;}
+	width: 800px;
+}
 
-	#tlo {
-		height: 800px;
-		background-image: 
-		url('http://www.hodowle.eu/Photos/wspinajacy-sie-kot-szkocki-.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-/*
+#tlo {
+	height: 800px;
+	background-image: url('http://www.hodowle.eu/Photos/wspinajacy-sie-kot-szkocki-.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*
 		background: url no-repeat;
 		background-size: cover;
 		
 */
-	}
+}
 
+#overflov {
+	width: 25%;
+	height: 400px;
+	border: 1px solid black;
+	overflow-x: scroll;
+}
 
+#overflov .inner {
+	width: 300%;
+	height: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#overflov p {
+	margin: 0;
+}
 
 
